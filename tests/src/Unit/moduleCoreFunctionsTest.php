@@ -6,12 +6,12 @@ use Drupal\Tests\UnitTestCase;
 require_once (__DIR__ . '/../../../drupal_testsuite.module');
 
 class moduleCoreFunctionsTest extends UnitTestCase {
-  public function testIfTwoStringsAreEqual() {
+  public function testDoubleStringsFunction() {
     $dTS = new DrupalTestSuite();
     $this->assertEquals('timtim', $dTS->double_strings('tim'));
   }
 
-  public function testIfQuadrupleWorks() {
+  public function testCapitalizeFunction() {
     $dTS = new DrupalTestSuite();
     $this->assertEquals('Tim', $dTS->capitalize('tim'));
   }
