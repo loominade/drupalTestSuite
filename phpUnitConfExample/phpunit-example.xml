@@ -13,8 +13,8 @@
     </php>
     <testsuites>
         <testsuite name="drupalTestSuite">
-            <directory>./web/modules/custom/drupal_test_suite</directory>
-            <exclude>./web/modules/custom/drupal_test_suite/unusedTests</exclude>
+            <directory>./web/modules/custom/drupal_testsuite</directory>
+            <exclude>./web/modules/custom/drupal_testsuite/unusedTests</exclude>
         </testsuite>
     </testsuites>
 </phpunit>

@@ -1,14 +1,14 @@
 {
-  "name": "drupal/drupal_test_suite",
+  "name": "drupal/drupal_testsuite",
   "type": "drupal-module",
   "description": "Test Suite for Drupal functions.",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/drupal_test_suite",
+  "homepage": "https://www.drupal.org/project/drupal_testsuite",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://www.drupal.org/project/issues/drupal_test_suite",
-    "source": "http://cgit.drupalcode.org/drupal_test_suite"
+    "issues": "https://www.drupal.org/project/issues/drupal_testsuite",
+    "source": "http://cgit.drupalcode.org/drupal_testsuite"
   },
   "require": { }
 }

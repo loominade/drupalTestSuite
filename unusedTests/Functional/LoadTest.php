@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\duden_test_suite\Functional;
+namespace Drupal\Tests\drupal_testsuite\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;

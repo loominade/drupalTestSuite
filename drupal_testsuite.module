@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains drupal_test_suite.module.
+ * Contains drupal_testsuite.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -10,10 +10,10 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function drupal_test_suite_help($route_name, RouteMatchInterface $route_match) {
+function drupal_testsuite_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     // Main module help for the duden_test_suite module.
-    case 'help.page.drupal_test_suite':
+    case 'help.page.drupal_testsuite':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('Test Suite for Drupal functions.') . '</p>';
@@ -21,4 +21,8 @@ function drupal_test_suite_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+function giveBackABC() {
+  return 'ABC';
 }

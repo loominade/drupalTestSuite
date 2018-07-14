@@ -1,7 +1,9 @@
 <?php
 
-use Drupal\drupal_test_suite\DrupalTestSuite;
+use Drupal\drupal_testsuite\DrupalTestSuite;
 use Drupal\Tests\UnitTestCase;
+
+require_once (__DIR__ . '/../../../drupal_testsuite.module');
 
 class moduleCoreFunctionsTest extends UnitTestCase {
   public function testIfTwoStringsAreEqual() {
@@ -12,5 +14,9 @@ class moduleCoreFunctionsTest extends UnitTestCase {
   public function testIfQuadrupleWorks() {
     $dTS = new DrupalTestSuite();
     $this->assertEquals('Tim', $dTS->capitalize('tim'));
+  }
+
+  public function testGiveBackABC() {
+    $this->assertEquals('ABC', giveBackABC());
   }
 }

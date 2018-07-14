@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\drupal_test_suite;
+namespace Drupal\drupal_testsuite;
 
 class DrupalTestSuite {
   public function double_strings($string) {
