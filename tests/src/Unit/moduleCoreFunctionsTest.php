@@ -34,5 +34,9 @@ class moduleCoreFunctionsTest extends UnitTestCase {
     $this->assertGreaterThan(3, 5);
   }
 
+  public function testFilesNotEqual () {
+    $this->assertFileNotEquals(__DIR__ . '/../../../drupal_testsuite.module', __DIR__ . '/../../../drupal_testsuite.info.yml');
+  }
+
 
 }
