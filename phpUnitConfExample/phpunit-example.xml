@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
+         backupGlobals="false"
+         colors="true"
+         bootstrap="web/core/tests/bootstrap.php"
+         verbose="true"
+>
+    <php>
+        <env name="SIMPLETEST_BASE_URL" value="http://yourlocalproject.test"/>
+        <env name="SIMPLETEST_DB" value="mysql://user@localhost/database"/>
+    </php>
+    <testsuites>
+        <testsuite name="drupalTestSuite">
+            <directory>./web/modules/custom/drupal_test_suite</directory>
+            <exclude>./web/modules/custom/drupal_test_suite/unusedTests</exclude>
+        </testsuite>
+    </testsuites>
+</phpunit>

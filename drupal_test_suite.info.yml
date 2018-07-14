@@ -1,0 +1,5 @@
+name: 'Drupal Test Suite'
+type: module
+description: 'Test Suite for Drupal functions.'
+core: 8.x
+package: 'LOOM'
