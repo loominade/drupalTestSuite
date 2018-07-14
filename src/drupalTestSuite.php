@@ -10,4 +10,12 @@ class DrupalTestSuite {
   public function capitalize($string) {
     return ucfirst($string);
   }
+
+  public function generateHaystack() {
+    return [
+      'hack',
+      'foo',
+      'bar',
+    ];
+  }
 }

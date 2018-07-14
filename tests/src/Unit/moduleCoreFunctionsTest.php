@@ -19,4 +19,9 @@ class moduleCoreFunctionsTest extends UnitTestCase {
   public function testGiveBackABC() {
     $this->assertEquals('ABC', giveBackABC());
   }
+
+  public function testArrayContaints() {
+    $dTs = new DrupalTestSuite();
+    $this->assertNotContains('baz', $dTs->generateHaystack());
+  }
 }
