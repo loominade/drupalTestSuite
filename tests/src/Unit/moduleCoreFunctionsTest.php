@@ -24,4 +24,15 @@ class moduleCoreFunctionsTest extends UnitTestCase {
     $dTs = new DrupalTestSuite();
     $this->assertNotContains('baz', $dTs->generateHaystack());
   }
+
+  //Need to fail to print out the message.
+  public function testMessage() {
+    $this->assertEmpty(NULL, 'this is a test message');
+  }
+
+  public function testGreaterThan () {
+    $this->assertGreaterThan(3, 5);
+  }
+
+
 }
